@@ -83,7 +83,7 @@ header h1 {
 /* Main Content */
 .main-content {
   display: flex;
-  width: 80%;
+  width: 90%;
   gap: 2rem;
   margin: 0 auto;
 }
@@ -110,7 +110,11 @@ h3 {
   display: flex;
 }
 
-.nav-buttons button {
+.nav-buttons .white-bg {
+  background-color: #fff;
+}
+
+button {
   flex-grow: 1;
   padding-block: 0.75rem;
   background-color: #d7dfeb;
@@ -118,11 +122,11 @@ h3 {
   cursor: pointer;
   font-size: 1.2rem;
   color: #1b292f;
-  transition: 0.25s;
+  transition: 0.5s;
   letter-spacing: 0.1rem;
 }
 
-.nav-buttons button:hover {
+.btn:hover {
   background-color: #ecf9fd;
 }
 
@@ -135,10 +139,10 @@ h3 {
 }
 
 /* Media Query/Queries */
-@media screen and (max-width: 67rem) {
+@media screen and (max-width: 65rem) {
   .main-content {
     flex-direction: column;
-    align-items: center;
+    width: 60%;
   }
 
   .main-img {
@@ -151,6 +155,10 @@ h3 {
 }
 
 @media screen and (max-width: 35rem) {
+  .main-content {
+    width: 100%;
+  }
+
   .nav-buttons {
     flex-direction: column;
   }
@@ -159,4 +167,3 @@ h3 {
     text-align: center;
   }
 }
-
