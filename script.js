@@ -16,7 +16,7 @@ infoBtn.forEach((btn) => {
     btn.classList.remove("btn");
     btn.classList.add("white-bg");
     data.forEach((item) => {
-      if (item.name === btn.dataset.id) {
+      if (item.id === btn.dataset.id) {
         title.innerHTML = item.name;
         text.innerHTML = item.text;
       }

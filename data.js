@@ -1,6 +1,6 @@
 export let data = [
   {
-    id: 1,
+    id: "1",
     name: "History",
     text: `<p>
   I'm baby wolf pickled schlitz try-hard normcore marfa man bun mumblecore vice
@@ -12,7 +12,7 @@ export let data = [
 </p>`,
   },
   {
-    id: 2,
+    id: "2",
     name: "Vision",
     text: `<p>
   Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth crucifix offal
@@ -30,7 +30,7 @@ export let data = [
 </ul>`,
   },
   {
-    id: 3,
+    id: "3",
     name: "Goals",
     text: `<p>
   Chambray authentic truffaut, kickstarter brunch taxidermy vape heirloom four

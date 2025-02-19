@@ -60,13 +60,13 @@ body {
   color: #575b5f;
 }
 
-/* Header */
-header {
+/* Title */
+.title {
   text-align: center;
   margin-block: 2rem;
 }
 
-header h1 {
+.title h1 {
   font-size: 3rem;
   color: #1b292f;
 }
@@ -83,8 +83,8 @@ header h1 {
 /* Main Content */
 .main-content {
   display: flex;
-  width: 90%;
-  gap: 2rem;
+  width: 100%;
+  gap: 1rem;
   margin: 0 auto;
 }
 
@@ -93,6 +93,8 @@ header h1 {
   background-color: #fff;
   border-radius: 0.25rem;
   width: 50%;
+  flex-grow: 0;
+  align-self: flex-start;
 }
 
 h3 {
@@ -139,10 +141,9 @@ button {
 }
 
 /* Media Query/Queries */
-@media screen and (max-width: 65rem) {
+@media screen and (max-width: 40rem) {
   .main-content {
     flex-direction: column;
-    width: 70%;
   }
 
   .main-img {
@@ -151,28 +152,10 @@ button {
 
   .main-text-content {
     width: 100%;
-  }
-
-  header {
-    width: 70%;
-    margin: 2rem auto;
-  }
-}
-
-@media screen and (max-width: 35rem) {
-  .main-content {
-    width: 100%;
+    text-align: center;
   }
 
   .nav-buttons {
     flex-direction: column;
-  }
-
-  .main-text-content {
-    text-align: center;
-  }
-
-  header {
-    width: 100%;
   }
 }
