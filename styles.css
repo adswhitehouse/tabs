@@ -55,7 +55,6 @@ select {
 body {
   font-family: "Archivo Narrow", serif;
   background-color: #f0f7fc;
-  gap: 3rem;
   padding: 0 1rem 1rem 1rem;
   color: #575b5f;
 }
@@ -85,7 +84,6 @@ body {
   display: flex;
   width: 100%;
   gap: 1rem;
-  margin: 0 auto;
 }
 
 /* Main Content Info */
@@ -93,7 +91,6 @@ body {
   background-color: #fff;
   border-radius: 0.25rem;
   width: 50%;
-  flex-grow: 0;
   align-self: flex-start;
 }
 

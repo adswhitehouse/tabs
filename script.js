@@ -1,12 +1,15 @@
 import { data } from "./data.js";
 
+// Variables
 let title = document.querySelector(".jsTitle");
 let text = document.querySelector(".jsText");
 let infoBtn = document.querySelectorAll(".jsInfoBtn");
 
+// Set initial text content
 title.innerHTML = data[0].name;
 text.innerHTML = data[0].text;
 
+// When button is clicked change the text content and button styling appropriately
 infoBtn.forEach((btn) => {
   btn.addEventListener("click", () => {
     infoBtn.forEach((btn) => {
